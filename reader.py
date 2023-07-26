@@ -106,7 +106,7 @@ class ReportReader:
         self.fnames = self.fname_to_tname.keys()
         
         if isinstance(data_dict, str):
-            self.data_dict = utils.read_data_dictionary(data_dict)
+            self.data_dict = read_data_dictionary(data_dict)
         elif isinstance(data_dict, dict):
             self.data_dict = data_dict
         elif data_dict==None:
